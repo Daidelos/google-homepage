@@ -1,50 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
 }
 
 .nav {
-    display: flex;
-    justify-content: flex-end;
-    margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 2rem;
 }
 
 .nav a {
-    margin-right: 2rem;
-    text-decoration: none;
-    color: grey;
+  margin-right: 2rem;
+  text-decoration: none;
+  color: grey;
 }
 
 .user-image {
-    margin-left: 4rem;
-    border: 0px solid black;
-    display: inline-block;
+  margin-left: 4rem;
+  border: 0px solid black;
+  display: inline-block;
 }
 
 .img {
-    transform: scale(1.3);
-border-radius: 50%;}
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  border-radius: 50%;
+}
 
 main {
-    width: 80%;
-    margin: 10rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 80%;
+  margin: 10rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .google-search {
-    margin: 2rem auto ;
+  margin: 2rem auto;
 }
 
 .btn-box {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
-  background-color: #f2f2f2; /* Green */
+  background-color: #f2f2f2;
+  /* Green */
   border: none;
   color: grey;
   padding: 10px 20px;
@@ -55,3 +78,35 @@ main {
   font-size: 16px;
   border-radius: 7px;
 }
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  background-color: lightgray;
+  border: 1px solid #aaaaaa;
+  font-size: .8rem;
+}
+
+.footer__country {
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__ftr {
+  padding: 1rem;
+  list-style: none;
+  color: #414141;
+}
+
+.footer__ftr--right {
+  margin-left: auto;
+}
+/*# sourceMappingURL=styles.css.map */
